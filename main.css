@@ -1,0 +1,34 @@
+*{
+    font-family: Arial;
+}
+
+h1{
+    color: #045604;
+}
+
+.emptyInputNotice{
+    background-color: yellow;
+}
+
+.emptyInputNotice2{
+    color: red;
+    font-weight: bold;
+    background-color: transparent;
+}
+body{
+    background-color: rgb(219, 219, 197);
+}
+button{
+    color:#045604;
+    font-size: large;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+.completed{
+    color: coral;
+    text-decoration: line-through ;
+}
+.trashbin{
+    font-size: large;
+    margin-inline-start: 0.5rem;
+}
