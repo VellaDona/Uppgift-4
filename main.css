@@ -1,34 +1,72 @@
 *{
     font-family: Arial;
 }
-
 h1{
+    font-size: 3rem;
     color: #045604;
 }
-
 .emptyInputNotice{
-    background-color: yellow;
+    margin: 2rem;
+    background-color: #e8e875;
 }
 
 .emptyInputNotice2{
     color: red;
     font-weight: bold;
     background-color: transparent;
+    display:block;
 }
 body{
-    background-color: rgb(219, 219, 197);
+    background-color: #dbdbc5;
+    text-align: center;
+    display:block;
 }
 button{
-    color:#045604;
-    font-size: large;
+    color:white;
+    font-size: 150%;
     font-weight: bold;
-    background-color: aliceblue;
+    background-color: #045604;
+    inline-size:10%;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+    border-block-start: 0.2rem solid #aac6aa;  
+    border-inline-start: 0.2rem solid #aac6aa; 
+    border-inline-end: 0.2rem solid #045604;    
+    border-block-end: 0.2rem solid #045604;   
+}
+input{
+    inline-size:30%;
+    border-radius: 0.5rem;
+    line-height: 2.5;
+    margin-inline: 2rem;
+    border-inline-start: 0.2rem solid #93a0a0; 
+    border-block-start: 0.2rem solid #93a0a0;  
+    border-inline-end: 0.2rem solid #e6eeee;  
+    border-block-end: 0.2rem solid #e6eeee;
+}
+#completedScoreNotice{
+    font-weight: bold;
 }
 .completed{
     color: coral;
-    text-decoration: line-through ;
+    text-decoration: line-through;
 }
 .trashbin{
     font-size: large;
     margin-inline-start: 0.5rem;
+}
+ul {
+    counter-reset: num;
+    list-style: none;
+    inline-size: fit-content; 
+    margin: 0.5rem auto;
+    text-align: start;
+}
+
+ul li{
+    margin: 0.4rem 0;
+    counter-increment: num;
+}
+ul li::before{
+    content: counter(num, decimal) ") ";
 }
